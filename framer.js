@@ -1,5 +1,6 @@
 
 const image = document.getElementById('img'); 
+const imgBorder = document.getElementById('imgBorder');
 const borderControl = document.getElementById('borderControl');
 const borderColourControl = document.getElementById('borderColourControl');
 const blurControl = document.getElementById('blurControl');
@@ -10,7 +11,7 @@ const blurControl = document.getElementById('blurControl');
  */
 const updateBorderThickness = (event) => {
   const thickness = event.target.value;
-  image.style.borderWidth = `${thickness}px`;
+  imgBorder.style.borderWidth = `${thickness}px`;
 };
 
 /**
@@ -19,7 +20,7 @@ const updateBorderThickness = (event) => {
  */
 const updateBorderColour = (event) => {
   const colour = event.target.value;
-  image.style.borderColor = colour;
+  imgBorder.style.borderColor = colour;
 };
 
 /**
