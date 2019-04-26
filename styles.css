@@ -34,12 +34,23 @@ body {
 }
 
 .image {
-  border-width: 0;
-  border-style: solid;
-  box-sizing: border-box;
   height: auto;
   max-width: 600px;
   width: 100%;
+  transform: scale(1.05);
+}
+
+.img-border {
+  border-width: 0;
+  border-style: solid;
+}
+
+.img-container {
+  align-items: center;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 input[type=range] {
